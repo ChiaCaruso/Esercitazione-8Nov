@@ -40,6 +40,9 @@ img{
         border: 2px solid #fff;
 }
 
+.hidden{
+        display: none;
+}
 
 
 /* ! HEADER */
@@ -236,8 +239,7 @@ footer{
 
 /* ! MODALE */
 
-#modale{
-        background: #033438;
+.modale{
         border-radius: 8px;
         border: 2px solid #c0ac71;
         width: 500px;
@@ -254,16 +256,52 @@ footer{
         box-shadow: 0 0 150px rgb(24, 22, 22);
         transition: all 0.35s;
 }
-#modale h3, #modale p{
+.modaleOne{
+        background: #033438;
+}
+.modale h3, .modale p{
         color: #fff;
 }
-#modale >*{
+.modale >*{
         display: inline-block;
         text-align: center;
 }
-#modale button{
+.modale button{
         margin-top: 20px;
 }
-.modale-cont{
+.modaleOne-cont, .modaleTwo-cont{
         display: none;
+}
+
+.modaleTwo{
+        background: #7a010f;
+        flex-direction: column;
+}
+
+
+/* ! MONKEYS */
+
+.monkeys{
+        display: none;
+        width: 600px;
+        height: 400px;
+        text-align: center;
+        flex-direction: column;
+        background: #7a010f;
+        border-radius: 8px;
+        box-shadow: 0 0 150px rgb(24, 22, 22);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+}
+.name-Monkey{
+        display: block;
+        font-size: 70px;
+        color: #fff;
+}
+.aka-Monkey{
+        display: block;
+        font-size: 40px;
+        color: #fff;
 }
