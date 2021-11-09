@@ -20,58 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
         modalOne.style.display = "none";
     })
 
+
 /**
- *  Functions to translate names of planets and calculate diameter of planets.
+ *  Function to calculate diameter of planets.
  */ 
-    const italianName = (planet) =>{
-        switch (planet.name) {
-            case 'Sun':
-                planet.name = 'Sole';
-                break;
-        
-            case 'Mercury':
-                planet.name = 'Mercurio';
-                break;
-        
-            case 'Venus':
-                planet.name = 'Venere';
-                break;
-        
-            case 'Earth':
-                planet.name = 'Terra';
-                break;
-        
-            case 'Mars':
-                planet.name = 'Marte';
-                break;
-        
-            case 'Jupiter':
-                planet.name = 'Giove';
-                break;
-        
-            case 'Saturn':
-                planet.name = 'Saturno';
-                break;
-        
-            case 'Uranus':
-                planet.name = 'Uranio';
-                break;
-        
-            case 'Neptune':
-                planet.name = 'Nettuno';
-                break;
-        }
-        return planet;
-    }
-
-    console.log(solarSystem.map(italianName));
-
     const planetDiameter = solarSystem.map((element) => element.radius * 2);
-        console.log(planetDiameter);
+    console.log(planetDiameter);
 
-/**
- *  Monkeys!
- */ 
 
     btnEvent.addEventListener("click", () =>{
         page.className = "hidden";
