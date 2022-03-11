@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul{
         line-height: 35px;
 }
 h1, h2, h3, h4, h5, h6{
-        font-family: 'Montserrat', sans-serif; 
+        font-family: 'Poppins', sans-serif; 
         font-weight: 500;
 }
 p, ol, ul{
@@ -244,17 +244,16 @@ footer{
         border: 2px solid #c0ac71;
         width: 500px;
         display: flex;
-        margin: 0 auto;
         padding: 30px;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        box-shadow: 0 0 150px rgb(24, 22, 22);
-        transition: all 0.35s;
+        box-shadow: 0 0 0 2000px rgba(24, 22, 22, 0.8);
+        transition: all 1s;
 }
 .modaleOne{
         background: #033438;
